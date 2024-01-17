@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "fa fa-home",
+        "title": "Home",
+        "path": "/home"
+    },
+    {
+        "icon":"fa fa-user",
+        "title": "Account",
+        "path": "/account"
+    },
+    {
+        "icon": "fa fa-shopping-cart",
+        "title": "Cart",
+        "path": "/cart"
+    }
+]
