@@ -22,7 +22,7 @@ const Item = ({products, quantity, setQuantity, addToCart}) =>
                         <button className="btn btn-primary" onClick={()=> addToCart(name)}>Add to cart</button>
                         <button className="btn btn-success">Buy now</button>
                     </div>
-                    <button className="btn btn-info" onClick={()=> navigate(-1)}>Continue shopping</button>
+                    <button className="btn btn-info" style={{width: "100%",backgroundColor: "#005477", color: "white"}} onClick={()=> navigate(-1)}>Continue shopping</button>
                 </div>
             </div>
         </>
