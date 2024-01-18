@@ -5,7 +5,7 @@
         "description": "Solar Panel",
         "category": "Solar Panel",
         "price": 10000,
-        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsuntech.co.ke%2Fsolar-panels%2F&psig=AOvVaw2JxuJTzYlPFZuwpJCDLj92&ust=1705654209456000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDr5J_H5oMDFQAAAAAdAAAAABAD"
+        "image": "https://media.istockphoto.com/id/1170098138/photo/solar-panels-fields-on-the-green-hills.jpg?s=1024x1024&w=is&k=20&c=6JKVHrDSLdZLmouYmzVaSPRHXLtAOtjoZPV7U0qtjAs="
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "Solar Panel",
         "category": "Solar Panel",
         "price": 15000,
-        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsuntech.co.ke%2Fsolar-panels%2F&psig=AOvVaw2JxuJTzYlPFZuwpJCDLj92&ust=1705654209456000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDr5J_H5oMDFQAAAAAdAAAAABAD"
+        "image": "https://www.shutterstock.com/image-photo/photovoltaic-solar-power-panel-on-260nw-548079301.jpg"
     },
     
     {
@@ -22,7 +22,7 @@
         "description": "Electrical socket",
         "category":"Electricals",
         "price": 2500,
-        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tacc.co.ke%2Fwp-content%2Fuploads%2F2021%2F06%2FPSOCKET17_NA_1.jpg&tbnid=XIRNbn_M7WCCRM&vet=12ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.tacc.co.ke%2Fproduct%2Fmultistandard-universal-socket-13a-silver%2F&docid=GYdGlnQKX8d13M&w=1000&h=1000&q=socket%20image&ved=2ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1"
+        "image": "https://media.istockphoto.com/id/184303060/photo/uk-british-electrical-plug-socket-and-plug-on-a-wall.jpg?s=612x612&w=0&k=20&c=NOUjetls-XMD8JAmW_gyvwkZIqQQirSGaJJLmZ-FXHM="
     },
     {
         "id": 4,
@@ -30,6 +30,6 @@
         "description": "Electrical socket",
         "category":"Electricals",
         "price": 3000,
-        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tacc.co.ke%2Fwp-content%2Fuploads%2F2021%2F06%2FPSOCKET17_NA_1.jpg&tbnid=XIRNbn_M7WCCRM&vet=12ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.tacc.co.ke%2Fproduct%2Fmultistandard-universal-socket-13a-silver%2F&docid=GYdGlnQKX8d13M&w=1000&h=1000&q=socket%20image&ved=2ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQSbanDb-laYkhZB155XSFxq4OtVwv6PEfNBrFFLavHyy7K_T4UmoFWcyEYvi34jTLSk&usqp=CAU"
     }
 ]

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../CSS/Items.css'
 const Items = ({products}) => 
 {
     const productsMap=products.map(product =>
@@ -7,19 +7,21 @@ const Items = ({products}) =>
             let{id, description, name, image, price}=product
 
             return(
-                <div key={id}>
-                    <p>{description}</p>
-                    <p>{name}</p>
-                    <img src={image} alt={name}/>
-                    <p>Kshs. {price}</p>
-                    <Link to={`/${name}`}>View Item</Link>
-                </div>
+                <Link key={id} to={`/${name}`}>
+                    <div className="item-card">
+                        <img src={image} alt={name} />
+                        <h5>{description}</h5>
+                        <p>Kshs. {price.toLocaleString()}</p>
+                        <button className="btn btn-primary">Click to view</button>
+                    </div>
+                </Link>
             )
         })
     return ( 
         <>
-            <h1>Products Page</h1>
-            {productsMap}
+            <div className="card-container mt-5">
+                {productsMap}
+            </div>
         </>
      );
 }
