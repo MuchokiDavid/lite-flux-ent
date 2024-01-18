@@ -1,3 +1,4 @@
+import Filter from "./Filter";
 import Navbar from "./Navbar";
 import { useState } from "react";
 const Shop = () => 
@@ -6,6 +7,7 @@ const Shop = () =>
     return ( 
         <>
             <Navbar cartCount={cartCount}/>
+            <Filter/>
         </>
      );
 }
