@@ -2,7 +2,7 @@ const Filter = () =>
 {
     return ( 
         <>
-            <div className="row g-3 mx-4 mt-5">
+            <div className="row g-3 mx-5 mt-1">
                 <div className="col-md-6">
                     <select name="price" id="price" className="form-select">
                         <option value="">Sort by price</option>
