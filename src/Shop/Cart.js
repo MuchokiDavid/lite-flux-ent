@@ -1,19 +1,23 @@
 import { Link } from "react-router-dom";
 
-const Cart = () => 
+const Cart = ({cartItems}) => 
 {
-    let cart=JSON.parse(localStorage.getItem("shopping-cart")) || []
     
-    if(cart.length === 0)
+    if(cartItems.length === 0)
     {
-        return <p>Cart is empty!</p>
+        return (
+            <>
+                <p>Cart is empty!</p>
+                <Link to="/shop" className="btn btn-info">Shop now</Link>
+            </>
+        )
     }
     
     return (  
         <>
             <h1>Cart Page</h1>
             <ul>
-                {cart.map((item, index)=>(
+                {cartItems.map((item, index)=>(
                     <li key={index}>Name: {item.name}- Quantity: {item.quantity}</li>
                 ))}
             </ul>

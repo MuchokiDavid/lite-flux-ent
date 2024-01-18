@@ -1,32 +1,42 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import Navbar from "./Shop/Navbar";
-import { useRef, useState } from "react";
 import Shop from "./Shop/Shop";
 import Products from './Shop/Data/Items.json'
 import Item from "./Shop/Items/Item";
 import Cart from "./Shop/Cart";
+
 const App = () => 
 {
-    const cartCount=useRef(0)
+    const [cartCount, setCartCount]=useState(0)
     const [quantity, setQuantity]=useState(1)
+    const [itemsInCart, setItemsInCart]=useState(JSON.parse(localStorage.getItem("shopping-cart")) || [])
+
 
     const addToCart= name =>
     {
         const cartItem={name, quantity}
-
-        const itemsInCart=JSON.parse(localStorage.getItem("shopping-cart")) || []
         const updatedCart=[...itemsInCart, cartItem]
+        setItemsInCart(updatedCart)
         localStorage.setItem("shopping-cart", JSON.stringify(updatedCart))
-        cartCount.current+=1
         alert("Item added to cart!")
     }
+
+    let cartItems=JSON.parse(localStorage.getItem("shopping-cart")) || []
+
+    useEffect(()=>
+    {
+        setCartCount(itemsInCart.length)
+    },[itemsInCart])
+
     return (  
         <>
-            <Navbar cartCount={cartCount.current}/>
+            <Navbar cartCount={cartCount}/>
             <Routes>
                 <Route path="/shop" element={<Shop Products={Products}/>}></Route>
                 <Route path="/:name" element={<Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>}></Route>
-                <Route path="/cart" element={<Cart/>}></Route>
+                <Route path="/cart" element={<Cart cartItems={cartItems}/>}></Route>
                 <Route path="*" element={<div>Page not found</div>}></Route>
             </Routes>
         </>
