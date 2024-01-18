@@ -8,7 +8,7 @@ const Cart = ({cartItems}) =>
         return (
             <>
                 <p>Cart is empty!</p>
-                <Link to="/shop" className="btn btn-info">Shop now</Link>
+                <Link to="/shop" className="btn btn-info" style={{backgroundColor: "#005477", color: "white"}}>Shop now</Link>
             </>
         )
     }
@@ -21,7 +21,7 @@ const Cart = ({cartItems}) =>
                     <li key={index}>Name: {item.name}- Quantity: {item.quantity}</li>
                 ))}
             </ul>
-            <Link to="/shop" className="btn btn-info">Continue shopping</Link>
+            <Link to="/shop" className="btn btn-info" style={{backgroundColor: "#005477", color: "white"}}>Continue shopping</Link>
         </>
     );
 }

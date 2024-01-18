@@ -21,7 +21,7 @@ div.item div.buttons
     justify-content: space-between;
     margin: 15px auto;
 }
-div.item .btn-info
+div.btn-info
 {
     width: 100%;
     background-color: #005477;
