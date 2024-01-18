@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Solar-Panel",
+        "description": "Solar Panel",
+        "category": "Solar Panel",
+        "price": 10000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsuntech.co.ke%2Fsolar-panels%2F&psig=AOvVaw2JxuJTzYlPFZuwpJCDLj92&ust=1705654209456000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDr5J_H5oMDFQAAAAAdAAAAABAD"
+    },
+    {
+        "id": 2,
+        "name": "Solar-Panel",
+        "description": "Solar Panel",
+        "category": "Solar Panel",
+        "price": 15000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsuntech.co.ke%2Fsolar-panels%2F&psig=AOvVaw2JxuJTzYlPFZuwpJCDLj92&ust=1705654209456000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDr5J_H5oMDFQAAAAAdAAAAABAD"
+    },
+    
+    {
+        "id": 3,
+        "name": "3-PIN-electrical-socket",
+        "description": "Electrical socket",
+        "category":"Electricals",
+        "price": 2500,
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tacc.co.ke%2Fwp-content%2Fuploads%2F2021%2F06%2FPSOCKET17_NA_1.jpg&tbnid=XIRNbn_M7WCCRM&vet=12ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.tacc.co.ke%2Fproduct%2Fmultistandard-universal-socket-13a-silver%2F&docid=GYdGlnQKX8d13M&w=1000&h=1000&q=socket%20image&ved=2ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1"
+    },
+    {
+        "id": 4,
+        "name": "3-PIN-electrical-socket",
+        "description": "Electrical socket",
+        "category":"Electricals",
+        "price": 3000,
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tacc.co.ke%2Fwp-content%2Fuploads%2F2021%2F06%2FPSOCKET17_NA_1.jpg&tbnid=XIRNbn_M7WCCRM&vet=12ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.tacc.co.ke%2Fproduct%2Fmultistandard-universal-socket-13a-silver%2F&docid=GYdGlnQKX8d13M&w=1000&h=1000&q=socket%20image&ved=2ahUKEwj4ntW5x-aDAxVtbKQEHQ_NCf8QMygBegQIARB1"
+    }
+]
