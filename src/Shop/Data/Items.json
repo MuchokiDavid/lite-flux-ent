@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Solar-Panel",
+        "name": "Solar-Panel-1",
         "description": "Solar Panel",
         "category": "Solar Panel",
         "price": 15000,
@@ -26,7 +26,7 @@
     },
     {
         "id": 4,
-        "name": "3-PIN-electrical-socket",
+        "name": "3-PIN-electrical-socket-1",
         "description": "Electrical socket",
         "category":"Electricals",
         "price": 3000,
