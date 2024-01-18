@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { Outlet } from "react-router-dom";
 import Filter from "./Filter";
 import Items from "./Items/Items";
-import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 
 const Shop = ({Products}) => 
 {
-    const [cartCount, setCartCount]=useState(0)
+    const [quantity, setQuantity]= useState(1)
     const [displayedProducts, setDisplayedProducts]=useState(Products)
     const [productFilters, setProductFilters]=useState(
         {
@@ -40,9 +40,9 @@ const Shop = ({Products}) =>
     
     return ( 
         <>
-            <Navbar cartCount={cartCount}/>
             <Filter handleSelectChange={handleSelectChange}/>
             <Items products={displayedProducts}/>
+            <Outlet/>
         </>
      );
 }

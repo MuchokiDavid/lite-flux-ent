@@ -24,6 +24,8 @@ div.item div.buttons
 div.item .btn-info
 {
     width: 100%;
+    background-color: #005477;
+    color: white;
 }
 @media screen and (min-width:320px) and (max-width: 767px) 
 {

@@ -7,7 +7,7 @@ const Items = ({products}) =>
             let{id, description, name, image, price}=product
 
             return(
-                <Link key={id} to={`/items/${name}`}>
+                <Link key={id} to={`/${name}`}>
                     <div className="item-card">
                         <img src={image} alt={name} />
                         <h5>{description}</h5>
