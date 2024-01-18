@@ -3,9 +3,8 @@ import Filter from "./Filter";
 import Items from "./Items/Items";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
-import Products from './Data/Items.json'
 
-const Shop = () => 
+const Shop = ({Products}) => 
 {
     const [cartCount, setCartCount]=useState(0)
     const [displayedProducts, setDisplayedProducts]=useState(Products)

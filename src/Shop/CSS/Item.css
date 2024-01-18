@@ -1,0 +1,39 @@
+div.item
+{
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.item img
+{
+    margin: 15px;
+    width: 40%;
+    height: max-content;
+}
+div.item div.item-text
+{
+    width: 250px;
+}
+div.item div.buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+div.item .btn-info
+{
+    width: 100%;
+}
+@media screen and (min-width:320px) and (max-width: 767px) 
+{
+    div.item
+    {
+        flex-direction: column;
+    }
+    div.item img
+    {
+        width: 100%;
+        margin: 30px;
+    }
+}
