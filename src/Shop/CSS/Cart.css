@@ -2,7 +2,7 @@ div.cart
 {
     margin-top: 10px;
 }
-div.cart div.cart-header
+div.cart > div.cart-header
 {
     display: flex;
     justify-content: space-between;
@@ -28,6 +28,10 @@ table img
 }
 @media(max-width:1023px)
 {
+	div.cart table
+	{
+		margin: 0px;
+	}
     table thead
     {
         display: none;

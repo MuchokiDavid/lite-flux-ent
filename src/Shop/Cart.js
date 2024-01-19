@@ -57,6 +57,7 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
                     })}
                 </tbody>
             </table>
+            <button className="btn btn-dark float-end mx-4">Checkout</button>
         </div>
     );
 }
