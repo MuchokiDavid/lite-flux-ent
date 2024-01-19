@@ -58,6 +58,10 @@ table img
 		font-weight: bold;
 		text-align: left;
 	}
+	table img
+	{
+		width: 30%;
+	}
 }
 @media(max-width:1440px)
 {
