@@ -39,7 +39,7 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
                     {
                         let {name, quantity}=item
                         const cartProduct=products.find(product => product.name === item.name)
-                        console.log(cartProduct)
+
                         let {image, description, price}=cartProduct
 
                         return(

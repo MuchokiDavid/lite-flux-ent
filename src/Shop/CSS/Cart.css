@@ -30,7 +30,7 @@ table img
 {
 	font-size: 1.8em;
 }
-.fa:hover
+.fa-trash-o:hover
 {
 	color: red;
 	cursor: pointer;
