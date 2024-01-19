@@ -20,7 +20,7 @@ table th, table tr, table td
 }
 table td
 {
-    width: calc(100% /5.5);
+    width: calc(100%/5.5);
 }
 table img
 {

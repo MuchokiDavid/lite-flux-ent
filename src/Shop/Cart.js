@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import './CSS/Cart.css'
 
-const Cart = ({cartItems, products}) => 
+const Cart = ({cartItems, products, setItemsInCart}) => 
 {
-    console.log(cartItems)
-    console.log(products)
-    
+    console.log(setItemsInCart)
+    const removeItem= name =>
+    {
+        console.log(name)
+        const remainingItems=cartItems.filter(item => item.name !== name)
+        console.log(remainingItems)
+        setItemsInCart(remainingItems)
+        localStorage.setItem("shopping-cart", JSON.stringify(remainingItems))
+    }
     return (  
         <div className="cart">
             <div className="cart-header">
@@ -23,7 +29,13 @@ const Cart = ({cartItems, products}) =>
                     </tr>
                 </thead>
                 <tbody>
-                   {cartItems.map(item=>
+                    {cartItems.length === 0 ? 
+                    
+                    <tr>
+                        <td colSpan={5} className="fw-bold">No items in cart!</td>
+                    </tr>
+                    : 
+                    cartItems.map(item=>
                     {
                         let {name, quantity}=item
                         const cartProduct=products.find(product => product.name === item.name)
@@ -33,12 +45,12 @@ const Cart = ({cartItems, products}) =>
                         return(
                             <>
                                 <tr key={name}>
-                                    <td><img src={image} alt={description}/></td>
-                                    <td>{description}</td>
-                                    <td>{quantity}</td>
-                                    <td>Kshs. {price.toLocaleString()}</td>
-                                    <td>Kshs. {(quantity * price).toLocaleString()}</td>
-                                    <td><i className="fa fa-trash-o"></i></td>
+                                    <td data-label="Product Image"><img src={image} alt={description}/></td>
+                                    <td data-label="Product Description">{description}</td>
+                                    <td data-label="Quantity">{quantity}</td>
+                                    <td data-label="Unit Price">Kshs. {price.toLocaleString()}</td>
+                                    <td data-label="Total Price">Kshs. {(quantity * price).toLocaleString()}</td>
+                                    <td data-label="Remove Item"><i className="fa fa-trash-o" onClick={()=>removeItem(name)}></i></td>
                                 </tr>
                             </>
                         )
