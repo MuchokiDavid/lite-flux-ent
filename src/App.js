@@ -14,17 +14,25 @@ const App = () =>
     const [quantity, setQuantity]=useState(1)
     const [itemsInCart, setItemsInCart]=useState(JSON.parse(localStorage.getItem("shopping-cart")) || [])
 
-
     const addToCart= name =>
     {
-        const cartItem={name, quantity}
-        const updatedCart=[...itemsInCart, cartItem]
-        setItemsInCart(updatedCart)
-        localStorage.setItem("shopping-cart", JSON.stringify(updatedCart))
-        alert("Item added to cart!")
-    }
+        itemsInCart.map(item =>
+            {
 
-    let cartItems=JSON.parse(localStorage.getItem("shopping-cart")) || []
+                if(item.name === name)
+                {
+                    alert("Item is already in the cart!")
+                }
+                else
+                {
+                    const cartItem={name, quantity}
+                    const updatedCart=[...itemsInCart, cartItem]
+                    setItemsInCart(updatedCart)
+                    localStorage.setItem("shopping-cart", JSON.stringify(updatedCart))
+                    alert("Item added to cart!")
+                }
+            })
+    }
 
     useEffect(()=>
     {
@@ -38,7 +46,7 @@ const App = () =>
                 <Route path="/account" element={<Account/>}></Route>
                 <Route path="/shop" element={<Shop Products={Products}/>}></Route>
                 <Route path="/:name" element={<Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>}></Route>
-                <Route path="/cart" element={<Cart cartItems={cartItems}/>}></Route>
+                <Route path="/cart" element={<Cart cartItems={itemsInCart} products={Products}/>}></Route>
                 <Route path="*" element={<div>Page not found</div>}></Route>
             </Routes>
         </>
