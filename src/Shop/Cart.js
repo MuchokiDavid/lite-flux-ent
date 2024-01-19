@@ -50,7 +50,7 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
                                     <td data-label="Quantity">{quantity}</td>
                                     <td data-label="Unit Price">Kshs. {price.toLocaleString()}</td>
                                     <td data-label="Total Price">Kshs. {(quantity * price).toLocaleString()}</td>
-                                    <td data-label="Remove Item"><i className="fa fa-trash-o" onClick={()=>removeItem(name)}></i></td>
+                                    <td data-label="Remove Item"><i className="fa fa-trash-o" onClick={()=>removeItem(name)} title="Remove item"></i></td>
                                 </tr>
                             </>
                         )

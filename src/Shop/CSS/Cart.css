@@ -26,6 +26,15 @@ table img
 {
     width: 70%;
 }
+.fa
+{
+	font-size: 1.8em;
+}
+.fa:hover
+{
+	color: red;
+	cursor: pointer;
+}
 @media(max-width:1023px)
 {
 	div.cart table
