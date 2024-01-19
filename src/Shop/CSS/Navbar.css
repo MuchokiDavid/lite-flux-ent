@@ -27,6 +27,10 @@ nav a span
     margin-left: 5px;
     font-size: 1em;
 }
+nav .fa, nav .fa-solid
+{
+    font-size: .9em;
+}
 @media screen and (min-width:320px) and (max-width: 767px) 
 { 
     nav a
