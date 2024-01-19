@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Cart = ({cartItems}) => 
 {
+    console.log(cartItems)
     if(cartItems.length === 0)
     {
         return (
