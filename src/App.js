@@ -6,6 +6,7 @@ import Shop from "./Shop/Shop";
 import Products from './Shop/Data/Items.json'
 import Item from "./Shop/Items/Item";
 import Cart from "./Shop/Cart";
+import Account from "./Account/Account";
 
 const App = () => 
 {
@@ -34,6 +35,7 @@ const App = () =>
         <>
             <Navbar cartCount={cartCount}/>
             <Routes>
+                <Route path="/account" element={<Account/>}></Route>
                 <Route path="/shop" element={<Shop Products={Products}/>}></Route>
                 <Route path="/:name" element={<Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>}></Route>
                 <Route path="/cart" element={<Cart cartItems={cartItems}/>}></Route>
