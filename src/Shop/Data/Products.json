@@ -1,0 +1,165 @@
+{
+    "categories":
+    [
+        {
+            "name": "Lighting",
+            "products": 
+            [
+                {
+                    "product-name": "Canopies 100W (Petrol station lights)", 
+                    "image": "",
+                    "price": 13500
+                },
+                {
+                    "product-name": "Solar Light 100W", 
+                    "image": "",
+                    "price": 4500
+                },
+                {
+                    "product-name": "Led Street light", 
+                    "image": "",
+                    "price": 13500
+                },
+                {
+                    "product-name": "Solar floodlight", 
+                    "image": "",
+                    "price": 15000
+                },
+                {
+                    "product-name": "Floodlight with CCTV",
+                    "image": "", 
+                    "price": 14000
+                },
+                {
+                    "product-name": "CCTV light", 
+                    "image": "",
+                    "price": 950
+                },
+                {
+                    "product-name": "LED Tube", 
+                    "image": "",
+                    "price": 160
+                },
+                {
+                    "product-name": "Staircase Lights", 
+                    "image": "",
+                    "price": 850
+                },
+                {
+                    "product-name": "Led lights 50 Meters", 
+                    "image": "",
+                    "price": 3500
+                },
+                {
+                    "product-name": "Indoor Solar Light 100W", 
+                    "image": "",
+                    "price": 3500
+                },
+                {
+                    "product-name": "Led panel 18W", 
+                    "image": "",
+                    "price": 1400
+                },
+                {
+                    "product-name": "Outdoor solar Mosquito Trap", 
+                    "image": "",
+                    "price": 6800
+                },
+                {
+                    "product-name": "Rechargeable Fire exit sign", 
+                    "image": "",
+                    "price": 4500
+                },
+                {
+                    "product-name": "",
+                    "image": "",
+                    "price": 1000
+                }
+            ]
+        },
+        {
+            "name": "Electrical Components",
+            "products": 
+            [
+                {
+                    "name": "Bulb holders", 
+                    "image": "",
+                    "price": 3200
+                },
+                
+                {
+                    "name": "DC Breaker", 
+                    "image": "",
+                    "price": 3800
+                },
+                {
+                    "name": "Circuit Breaker", 
+                    "image": "",
+                    "price": 450
+                },
+                {
+                    "name": "DC disconnect", 
+                    "price": 4500
+                },
+                {
+                    "name": "DC disconnect 100amp", 
+                    "image": "",
+                    "price": 4000
+                },
+                {
+                    "name": "MC cutout", 
+                    "image": "",
+                    "price": 3200
+                }
+            ]
+        },
+        {
+            "name": "Solar Products",
+            "products": 
+            [
+                {
+                    "name": "Hybrid inverter", 
+                    "image": "",
+                    "price": 65000
+                },
+                {
+                    "name": "Sunverter 2.2", 
+                    "image": "",
+                    "price": 43000
+                },
+                {
+                    "name": "Off grid connector", 
+                    "image": "",
+                    "price": 65000
+                },
+                {
+                    "name": "Solar panel 660 watt", 
+                    "image": "",
+                    "price": null
+                }
+            ]
+        },
+        {
+            "name": "Communication Devices",
+            "products": 
+            [
+                {
+                    "name": "Fanvil Phone (Wireless with in built Wi-Fi) x210", 
+                    "image": "",
+                    "prices": 28000
+                }
+            ]
+        },
+        {
+            "name": "Energy Management",
+            "products": 
+            [
+                {
+                    "name": "Three-faced Sub meter", 
+                    "image": "",
+                    "price": 11500
+                }
+            ]
+        }
+    ]
+}
