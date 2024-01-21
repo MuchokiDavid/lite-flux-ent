@@ -60,8 +60,8 @@ const Shop = ({Products, Categories}) =>
                 return null
             }
         })
-    
-    //Filtering the set to avoid null values
+
+    //The result of filterCategories is an array where the duplicate categories are marked with null. Because of this, we filter the result to remove the null values
     const categories=filterCategories.filter(category => category !== null)
 
     return ( 
