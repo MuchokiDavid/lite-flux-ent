@@ -27,23 +27,28 @@ const App = () =>
     {
         if(itemsInCart)
         {
-            if(itemsInCart.length > 0)
-            {
-                itemsInCart.map(item =>
-                    {
-                        if(item.name === name)
-                        {
-                            alert("Item is already in the cart")
-                        }
-                        else
-                        {
-                            newCartItem(name, quantity)
-                        }
-                    })
-            }
-            else
+            if(itemsInCart.length === 0)
             {
                 newCartItem(name, quantity)
+            }
+            else if(itemsInCart.length >= 1)
+            {
+                let isItemInCart=false
+
+                itemsInCart.forEach(item => 
+                {
+                    if(item.name === name)
+                    {
+                        isItemInCart=true
+                    }
+                    else
+                    {
+                        isItemInCart=false
+                    }
+                });
+
+                isItemInCart ? alert("Item already added to cart") : newCartItem(name, quantity) 
+
             }
             
         }

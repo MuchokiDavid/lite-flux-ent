@@ -3,15 +3,13 @@ import './CSS/Cart.css'
 
 const Cart = ({cartItems, products, setItemsInCart}) => 
 {
-    console.log(setItemsInCart)
     const removeItem= name =>
     {
-        console.log(name)
         const remainingItems=cartItems.filter(item => item.name !== name)
-        console.log(remainingItems)
         setItemsInCart(remainingItems)
         localStorage.setItem("shopping-cart", JSON.stringify(remainingItems))
     }
+
     return (  
         <div className="cart">
             <div className="cart-header">
@@ -32,7 +30,7 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
                     {cartItems.length === 0 ? 
                     
                     <tr>
-                        <td colSpan={5} className="fw-bold">No items in cart!</td>
+                        <td key="empty" colSpan={5} className="fw-bold">No items in cart!</td>
                     </tr>
                     : 
                     cartItems.map(item=>
