@@ -2,6 +2,9 @@
 import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 //Importing components
 import Navbar from "./Shop/Navbar";
 import Shop from "./Shop/Shop";
@@ -31,7 +34,7 @@ const App = () =>
         const updatedCart=[...itemsInCart, newItem]
         setItemsInCart(updatedCart)
         localStorage.setItem("shopping-cart", JSON.stringify(updatedCart))
-        alert("Item added to cart")
+        toast.success("Item added to cart")
     }
 
     //Function to add items to cart
@@ -62,7 +65,7 @@ const App = () =>
                     }
                 });
 
-                isItemInCart ? alert("Item already added to cart") : newCartItem(name, quantity) 
+                isItemInCart ? toast.error("Item already added to cart") : newCartItem(name, quantity) 
 
             }
             
@@ -78,6 +81,7 @@ const App = () =>
     return (  
         <>
             <Navbar cartCount={cartCount}/>
+            <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss={false} draggable pauseOnHover={false} theme="colored"/>            
             <Routes>
                 <Route path="/account" element={<Account/>}></Route>
                 <Route path="/shop" element={<Shop Products={Products} Categories={Categories}/>}></Route>

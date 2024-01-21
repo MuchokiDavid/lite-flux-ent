@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import './CSS/Cart.css'
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Cart = ({cartItems, products, setItemsInCart}) => 
 {
     const removeItem= name =>
@@ -8,6 +11,7 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
         const remainingItems=cartItems.filter(item => item.name !== name)
         setItemsInCart(remainingItems)
         localStorage.setItem("shopping-cart", JSON.stringify(remainingItems))
+        toast.success("Item removed from cart")
     }
 
     return (  
