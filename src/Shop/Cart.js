@@ -42,13 +42,13 @@ const Cart = ({cartItems, products, setItemsInCart}) =>
                         let {name, quantity}=item
                         const cartProduct=products.find(product => product.name === item.name)
 
-                        let {image, description, price}=cartProduct
+                        let {image, price}=cartProduct
 
                         return(
                             <>
                                 <tr key={name}>
-                                    <td data-label="Product Image"><img src={image} alt={description}/></td>
-                                    <td data-label="Product Description">{description}</td>
+                                    <td data-label="Product Image"><img src={image} alt={name}/></td>
+                                    <td data-label="Product Description">{name}</td>
                                     <td data-label="Quantity">{quantity}</td>
                                     <td data-label="Unit Price">Kshs. {price.toLocaleString()}</td>
                                     <td data-label="Total Price">Kshs. {(quantity * price).toLocaleString()}</td>
