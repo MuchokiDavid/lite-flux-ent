@@ -1,4 +1,4 @@
-const Filter = ({handleSelectChange}) => 
+const Filter = ({handleSelectChange, categories}) => 
 {
     return ( 
         <>
@@ -7,8 +7,10 @@ const Filter = ({handleSelectChange}) =>
                     <label htmlFor="category" className="form-label">Sort by category</label>
                     <select name="category" id="category" className="form-select" onChange={handleSelectChange}>
                         <option value="">All</option>
-                        <option value="Solar Panel">Solar Panel</option>
-                        <option value="Electricals">Electricals</option>
+                        {categories.map(category =>
+                            (
+                                <option key={category} value={category}>{category}</option>
+                            ))}
                     </select>
                 </div>
                 <div className="col-md-6">
