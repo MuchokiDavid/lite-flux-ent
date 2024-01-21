@@ -43,10 +43,30 @@ const Shop = ({Products, Categories}) =>
         categoryFilter()
 
     },[productFilters.category])
+
+    //Extracting the categories from the products
+    const uniqueCategories=new Set()//Creating a set to keep track of unique categories
+
+    //Mapping through the Products array and filtering out duplicates
+    const filterCategories=Products.map(product =>
+        {
+            if(!uniqueCategories.has(product.category))
+            {
+                uniqueCategories.add(product.category)
+                return product.category
+            }
+            else
+            {
+                return null
+            }
+        })
     
+    //Filtering the set to avoid null values
+    const categories=filterCategories.filter(category => category !== null)
+
     return ( 
         <>
-            <Filter handleSelectChange={handleSelectChange} categories={Categories}/>
+            <Filter handleSelectChange={handleSelectChange} categories={categories}/>
             <Items products={displayedProducts}/>
             <Outlet/>
         </>

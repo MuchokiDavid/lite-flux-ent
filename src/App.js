@@ -14,7 +14,6 @@ import Account from "./Account/Account";
 
 //Importing data files
 import Products from './Shop/Data/Products.json'
-import Categories from './Shop/Data/Categories.json'
 
 const App = () => 
 {
@@ -84,7 +83,7 @@ const App = () =>
             <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss={false} draggable pauseOnHover={false} theme="colored"/>            
             <Routes>
                 <Route path="/account" element={<Account/>}></Route>
-                <Route path="/shop" element={<Shop Products={Products} Categories={Categories}/>}></Route>
+                <Route path="/shop" element={<Shop Products={Products} />}></Route>
                 <Route path="/:name" element={<Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>}></Route>
                 <Route path="/cart" element={<Cart cartItems={itemsInCart} setItemsInCart={setItemsInCart} products={Products}/>}></Route>
                 <Route path="*" element={<div>Page not found</div>}></Route>
