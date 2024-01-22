@@ -7,7 +7,6 @@ const Item = ({products, quantity, setQuantity, addToCart}) =>
     const navigate=useNavigate()
 
     const product=products.find(item => item.name === name)
-
     let{description, image, price}=product
     return ( 
         <>

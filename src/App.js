@@ -1,19 +1,20 @@
 /* eslint-disable array-callback-return */
-import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 //Importing components
-import Navbar from "./Shop/Navbar";
+import Home from './Main Page/Home'
 import Shop from "./Shop/Shop";
 import Item from "./Shop/Items/Item";
 import Cart from "./Shop/Cart";
-import Account from "./Account/Account";
+import Account from "./Shop/Account/Account";
 
 //Importing data files
 import Products from './Shop/Data/Products.json'
+import Layout from "./Shop/Layout";
 
 const App = () => 
 {
@@ -77,17 +78,45 @@ const App = () =>
         setCartCount(itemsInCart.length)
     },[itemsInCart])
 
+    const router=createBrowserRouter(
+        [
+            {
+                path: "/",
+                element: <Home/>
+            },
+            {
+                path: "/",
+                element: <Layout cartCount={cartCount}/>,
+                children:
+                [
+                    {
+                        path: "shop",
+                        element: <Shop Products={Products} />
+                    },
+                    {
+                        path: ":name",
+                        element: <Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>
+                    },
+                    {
+                        path: "cart",
+                        element: <Cart cartItems={itemsInCart} setItemsInCart={setItemsInCart} products={Products}/>
+                    },
+                    {
+                        path: "account",
+                        element: <Account/>
+                    }
+                ]
+            },
+            {
+                path: "*",
+                element: <div>Page Not found</div>
+            }
+        ]
+    )
     return (  
         <>
-            <Navbar cartCount={cartCount}/>
-            <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss={false} draggable pauseOnHover={false} theme="colored"/>            
-            <Routes>
-                <Route path="/account" element={<Account/>}></Route>
-                <Route path="/shop" element={<Shop Products={Products} />}></Route>
-                <Route path="/:name" element={<Item products={Products} quantity={quantity} setQuantity={setQuantity} addToCart={addToCart}/>}></Route>
-                <Route path="/cart" element={<Cart cartItems={itemsInCart} setItemsInCart={setItemsInCart} products={Products}/>}></Route>
-                <Route path="*" element={<div>Page not found</div>}></Route>
-            </Routes>
+            <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss={false} draggable pauseOnHover={false} theme="colored"/>        
+            <RouterProvider router={router}/>    
         </>
     );
 }
