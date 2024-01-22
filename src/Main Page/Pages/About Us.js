@@ -1,5 +1,5 @@
-import SolarPanelsImage from './Images/Solar-Panels.jpg'
-import './CSS/About.css'
+import SolarPanelsImage from '../Images/Solar-Panels.jpg'
+import '../CSS/About.css'
 const AboutUs = () => 
 {
     return ( 

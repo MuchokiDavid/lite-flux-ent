@@ -1,11 +1,11 @@
-import MenAtWork from './Images/Men at work.jpg'
-import SolarInstallation from './Images/solar installation.jpg'
-import Electrical from './Images/Electrical.jpg'
-import Cabling from './Images/cabling.jpeg'
-import CCTV from './Images/cctv.jpeg'
-import NetworkCabling from './Images/network.jpeg'
+import MenAtWork from '../Images/Men at work.jpg'
+import SolarInstallation from '../Images/solar installation.jpg'
+import Electrical from '../Images/Electrical.jpg'
+import Cabling from '../Images/cabling.jpeg'
+import CCTV from '../Images/cctv.jpeg'
+import NetworkCabling from '../Images/network.jpeg'
 
-import './CSS/Gallery.css'
+import '../CSS/Gallery.css'
 const Gallery = () => 
 {
     return (  

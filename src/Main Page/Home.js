@@ -1,9 +1,9 @@
-import AboutUs from "./About Us";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
-import Navbar from "./Navbar";
-import Services from "./Services";
-import Statistics from "./Statistics";
+import AboutUs from "./Pages/About Us";
+import Footer from "./Pages/Footer";
+import Gallery from "./Pages/Gallery";
+import Navbar from "./Pages/Navbar";
+import Services from "./Pages/Services";
+import Statistics from "./Pages/Statistics";
 const Home = () => 
 {
     return ( 
