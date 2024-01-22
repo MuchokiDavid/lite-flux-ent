@@ -149,5 +149,23 @@
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvagPEExQaXNORRp1BPMBbvdrbr3U-Eaq_gi9_mlyUFtG9764tu5nRamenb9i4cWlgys0&usqp=CAU",
         "category": "Energy Management",
         "price": 11500
+    },
+    {
+        "name": "Twin socket",
+        "image": "https://premisekeyelectricals.co.ke/wp-content/uploads/2019/01/twinsocket.jpg",
+        "category": "Electrical Components",
+        "price": 700
+    },
+    {
+        "name": "Single socket",
+        "image": "https://www.techyshop.co.ke/wp-content/uploads/2017/08/Single-socket-white-pattress-box-1.jpg",
+        "category":"Electrical Components",
+        "price": 450
+    },
+    {
+        "name": "Twin socket with USB inlet 13Amps",
+        "image":"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/88/173346/1.jpg?8157",
+        "category":"Electrical Components",
+        "price": 900
     }
 ]
