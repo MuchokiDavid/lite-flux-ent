@@ -2,7 +2,7 @@ const Filter = ({handleSelectChange, categories}) =>
 {
     return ( 
         <>
-            <div className="row g-3 mx-5 mt-1">
+            <div className="row g-3 mx-5 mt-5">
                 <div className="col-md-6">
                     <label htmlFor="category" className="form-label">Sort by category</label>
                     <select name="category" id="category" className="form-select" onChange={handleSelectChange}>
