@@ -25,6 +25,7 @@ a, a:visited
 .card-container .item-card h5
 {
     font-size: 1.2em;
+    padding-top: 10px;
 }
 .card-container .item-card button
 {
