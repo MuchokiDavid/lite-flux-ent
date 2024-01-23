@@ -1,10 +1,5 @@
 [
     {
-        "icon": "fa fa-home",
-        "title": "Home",
-        "path": "/"
-    },
-    {
         "icon": "fa-solid fa-store",
         "title": "Shop",
         "path": "/shop"

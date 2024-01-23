@@ -1,7 +1,9 @@
 import Links from './Data/Navbar links.json'
 import { Link } from 'react-router-dom'
-import './CSS/Navbar.css'
-const Navbar = ({cartCount}) => 
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import Logo from '../Main Page/Images/logo.png'
+
+const ShopNavbar = ({cartCount}) => 
 {
     const navLinks=Links.map(link =>
         {
@@ -10,25 +12,40 @@ const Navbar = ({cartCount}) =>
             if (path === "/cart")
             {
                 return(
-                    <Link key={title} to={path} title={title}>
-                        <i className={icon}><span><sup>{cartCount}</sup></span></i>
-                    </Link>
+                    <Nav.Link>
+                        <Link key={title} to={path} title={title}>
+                            <i className={icon}><span><sup>{cartCount}</sup></span></i>
+                        </Link>
+                    </Nav.Link>
                 )
             }
             else
             {
                 return(
-                    <Link key={title} to={path} title={title} ><i className={icon}></i></Link>
+                    <Nav.Link>
+                        <Link key={title} to={path} title={title} ><i className={icon}></i></Link>
+                    </Nav.Link>
                 )
             }
         })
     return ( 
         <>
-            <nav>
-                {navLinks}
-            </nav>
+            <Navbar bg='dark' expand="lg" fixed='top'>
+                <Container>
+                    <Navbar.Brand href="/">
+                        <img src={Logo} width="75" height="45"  className="d-inline-block align-top" alt="Brand" />
+                    </Navbar.Brand>
+
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" bg="light"/>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto">
+                            {navLinks}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
      );
 }
  
-export default Navbar;
+export default ShopNavbar;

@@ -7,7 +7,7 @@ const Footer = () =>
 
     return ( 
         <>
-            <section id="footer">
+            <section id="contacts">
                 <div class="heading">
                     <h2>LITEFLUX ENT.<sup>&trade;</sup></h2>
                 </div>
