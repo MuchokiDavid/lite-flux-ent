@@ -5,14 +5,22 @@
 nav
 {
     background-color: #005477;
-    color: white;
 }
 nav a, nav a:visited
 {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 nav a:hover
 {
     color: black;
+}
+nav a span
+{
+    margin-left: 5px;
+    font-size: 1em;
+}
+nav .fa, nav .fa-solid
+{    font-size: 1.4em;
+    margin-left: 15px;
 }

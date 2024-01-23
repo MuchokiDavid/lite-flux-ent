@@ -2,6 +2,7 @@ import Links from './Data/Navbar links.json'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Logo from '../Main Page/Images/logo.png'
+import '../Navbar.css'
 
 const ShopNavbar = ({cartCount}) => 
 {
@@ -30,7 +31,7 @@ const ShopNavbar = ({cartCount}) =>
         })
     return ( 
         <>
-            <Navbar bg='dark' expand="lg" fixed='top'>
+            <Navbar expand="lg" fixed='top'>
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={Logo} width="75" height="45"  className="d-inline-block align-top" alt="Brand" />

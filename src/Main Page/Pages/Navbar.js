@@ -8,7 +8,7 @@ const HomeNav = () =>
         <>
             <Navbar expand="lg" fixed='top'>
                 <Container>
-                    <Navbar.Brand href="#">
+                    <Navbar.Brand href="/">
                         <img src={Logo} width="70" height="40"  className="d-inline-block align-top" alt="Brand" />
                     </Navbar.Brand>
 
