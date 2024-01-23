@@ -1,35 +1,24 @@
-div.item
+.item
 {
     border: 1px solid lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
 }
-div.item img
+.item img
 {
     margin: 15px;
     width: 40%;
     height: max-content;
 }
-div.item div.item-text
+.itemText
 {
     width: 250px;
 }
-div.item div.buttons
+.buttons
 {
     display: flex;
     justify-content: space-between;
     margin: 15px auto;
-}
-@media screen and (min-width:320px) and (max-width: 767px) 
-{
-    div.item
-    {
-        flex-direction: column;
-    }
-    div.item img
-    {
-        width: 100%;
-        margin: 30px;
-    }
 }

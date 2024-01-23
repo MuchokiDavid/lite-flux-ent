@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import '../CSS/Item.css'
+import ItemStyling from '../CSS/Item.module.css'
 
 const Item = ({products, quantity, setQuantity, addToCart}) => 
 {
@@ -10,14 +10,14 @@ const Item = ({products, quantity, setQuantity, addToCart}) =>
     let{description, image, price}=product
     return ( 
         <>
-            <div className="item">
-                <img src={image} alt={name} />
-                <div className="item-text">
+            <div className={ItemStyling.item}>
+                <img src={image} alt={name} className={ItemStyling.itemImage}/>
+                <div className={ItemStyling.itemText}>
                     <h2 className="fw-bolder text-uppercase fs-3">{name}</h2>
                     <p className="fw-bold fs-5">{description}</p>
                     <p>Kshs. {price.toLocaleString()}</p>
                     <input type="number" name="quantity" id="quantity" className="form-control" min={1} defaultValue={quantity} onChange={e => setQuantity(e.target.value)} required/>
-                    <div className="buttons">
+                    <div className={ItemStyling.buttons}>
                         <button className="btn btn-primary" onClick={()=> addToCart(name)}>Add to cart</button>
                         <button className="btn btn-success">Buy now</button>
                     </div>
