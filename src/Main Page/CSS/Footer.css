@@ -57,7 +57,7 @@
 }
 @media screen and (min-width:320px) and (max-width: 767px)
 {
-    #footer .footer-content
+    #contacts .footer-content
     {
         flex-direction: column;
         gap: 20px;
@@ -65,7 +65,7 @@
 }
 @media screen and (min-width:768px)
 {
-    #footer .footer-content
+    #contacts .footer-content
     {
         flex-wrap: wrap;
         gap: 20px;
