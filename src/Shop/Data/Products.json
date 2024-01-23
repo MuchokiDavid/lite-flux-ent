@@ -167,5 +167,227 @@
         "image":"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/88/173346/1.jpg?8157",
         "category":"Electrical Components",
         "price": 900
+    },
+    {
+        "name": "Dahua IP Camera",
+        "image": "https://mtech.co.ke/media/cache/4e/03/4e03174695798a416ba63fbcbf9f4631.jpg",
+        "category": "CCTV Cameras",
+        "price": 3500
+    },
+    {
+        "name": "Dahua IP Camera Full Color",
+        "image": "https://www.designerentryway.com/cdn/shop/products/134230020709-0.jpg?v=1669139383&width=1024",
+        "category": "CCTV Cameras",
+        "price": 6500
+    },
+    {
+        "name": "Dahua HD Camera",
+        "image": "https://www.tdk.co.ke/wp-content/uploads/2022/08/Dahua-CCTV-Cameras-for-sale-in-kenya-Nairobi.jpeg",
+        "category": "CCTV Cameras",
+        "price": 1800
+    },
+    {
+        "name": "Dahua HD Camera Full Color",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoMGTdwaGxE1uPeEclZ2KsP08Yje_ovvSXqDrLxP5Ma4-A2K0ityusTnOQhl51RGY1CA&usqp=CAU",
+        "category": "CCTV Cameras",
+        "price": 2700
+    },
+    {
+      "name": "Hikvision HD",
+      "image": "https://www.hikvisionshopkenya.co.ke/wp-content/uploads/2021/07/HIKVISION-1080P-HD-Camera-DS-2CE10DF0T-F3.6mm-White.jpg",
+      "category": "CCTV Cameras",
+      "price": 2200
+    },
+    {
+        "name": "Hikvision IP",
+        "image": "https://www.hikvisionshopkenya.co.ke/wp-content/uploads/2021/07/2-MP-Hikvision-DS-2CD1323G0-IU-IP-Dome-Camera.jpg",
+        "category": "CCTV Cameras",
+        "price": 6500
+    },
+    {
+        "name": "Fanvil X301P",
+        "image": "https://www.tdk.co.ke/wp-content/uploads/2023/08/Fanvil-X301P-Entry-Level-IP-Phone.png",
+        "category": "Communication Devices",
+        "price": 4700
+    },
+    {
+        "name": "Fanvil X303W",
+        "image": "https://pictures-kenya.jijistatic.com/55107281_NjIwLTUwOC04MDg5YmVkNDg0.webp",
+        "category": "Communication Devices",
+        "price": 6700
+    },
+    {
+        "name": "Fanvil X303P",
+        "image": "https://www.fanvil.com/upload/images/20221115/1611px46d2.png",
+        "category": "Communication Devices",
+        "price": 5300
+    },
+    {
+        "name": "Fanvil X3SG",
+        "image": "https://www.tdk.co.ke/wp-content/uploads/2022/09/fanvil.png",
+        "category": "Communication Devices",
+        "price": 5700
+    },
+    {
+        "name": "Fanvil X3SP",
+        "image": "https://www.dataworld.co.ke/wp-content/uploads/2021/08/Fanvil-X3SP-PoE-VoIP-IP-Phone.png",
+        "category": "Communication Devices",
+        "price": 5300
+    },
+    {
+        "name": "Fanvil X3U",
+        "image": "https://mtech.co.ke/media/products/2023/02/050.jpg",
+        "category": "Communication Devices",
+        "price": 6300
+    },
+    {
+        "name": "Fanvil X4G",
+        "image": "https://kenyatronics.com/images/getImage/phpLjcnag/500",
+        "category": "Communication Devices",
+        "price": 7300
+    },
+    {
+        "name": "Fanvil X4U",
+        "image": "https://www.tronik.co.ke/wp-content/uploads/2022/10/X4U.png",
+        "category": "Communication Devices",
+        "price": 10300
+    },
+    {
+        "name": "Fanvil X5U",
+        "image": "https://www.itamtech.com/media/catalog/product/cache/e74b2e9e65856c5e7393f7a70c79ca9f/x/5/x5s_1.jpg",
+        "category": "Communication Devices",
+        "price": 11700
+    },
+    {
+        "name": "Fanvil X5U-R",
+        "image": "https://shop.b2b-it-gmbh.de/media/image/product/173678/lg/fanvil-ip-telefon-x5u-r-red.jpg",
+        "category": "Communication Devices",
+        "price": 14300
+    },
+    {
+        "name": "Fanvil X6U",
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/8272161/1.jpg?4689",
+        "category": "Communication Devices",
+        "price": 14300
+    },
+    {
+        "name": "Fanvil X7",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7wQRNtfOWLsI--rt0acl6rUjqAE-ANI7iw&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 18300
+    },
+    {
+        "name": "Fanvil X7A",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gm8Ku2VMyba6IMHFamayIedTmvdslNjCdA&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 25300
+    },
+    {
+        "name": "Fanvil V67",
+        "image": "https://www.tdk.co.ke/wp-content/uploads/2023/08/Fanvil-V67-IP-Phones-prices-in-kenya.png",
+        "category": "Communication Devices",
+        "price": 38300
+    },
+    {
+        "name": "Fanvil X210",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FTV3_XElR1VXdaeg9MgQDO7HSmniGQT5kWstYlt94n0t2I3Rm1U5B5VEiI3gMqiityA&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 25300
+    },
+    {
+        "name": "Fanvil CS30 Speakerphone",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-ZBBaMVpHbXt8IiKdOM-_HNIADwJSHEK5bZy08NGd7lolf_9N6GVwu0CGQ8IeCH1sqM&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 12300
+    },
+    {
+        "name": "Ht301-U USB Wired Headset",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfe7YXc14-QMwF9eTklJ65FgbKTv9ozpasB_Jv64tE-UvSAzR7VaYquunUBAQMihgSDA&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 3700
+    },
+    {
+        "name": "Wf20 USB Adapter",
+        "image": "https://mtech.co.ke/media/cache/e1/26/e1265047b55ac4c6a2c6ed110aac6211.jpg",
+        "category": "Communication Devices",
+        "price": 2700
+    },
+    {
+        "name": "Fanvil H1 Hotel IP Phone",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2YWdRwIRkyWhY7DnJkD2bEjcJaNEwWcDFT4l-x_R9SX3SrgG4XTW7IByD6DVyxe7nbM&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 0
+    },
+    {
+        "name": "Fanvil H5 Hotel IP Phone",
+        "image": "https://www.mall99.co.ke/wp-content/uploads/2023/10/Fanvil-H5-Hotel-IP-Phone.png",
+        "category": "Communication Devices",
+        "price": 9300
+    },
+    {
+        "name": "Fanvil H2U Compact IP Phone",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqNLyatBveCWuoGXyka_5LJqiwE7cB1RWklgToE7NPD8Z-eneu3vjd1Ksv1zovZxYnXZs&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 5700
+    },
+    {
+        "name": "Fanvil Linkvil W712 RoIP Gateway",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq3KIgRUjyexLn2QEy5xiFa8ODzfQKOexvabsnUj0VdKkvEXBIcofGbbxW2VUxGwscbNM&usqp=CAU",
+        "category": "Communication Devices",
+        "price": 43300
+    },
+    {
+        "name": "13amp Metallic Twin Socket",
+        "image": "https://www.tronic.co.ke/cdn/shop/products/TM5213.jpg?v=1667813225",
+        "category": "Sockets",
+        "price": 850
+    },
+    {
+        "name": "Universal Metal Socket",
+        "image": "https://www.tacc.co.ke/wp-content/uploads/2023/10/PSOCKET75_Grey_1.jpg",
+        "category": "Sockets",
+        "price": 1750
+    },
+    {
+        "name": "15amps Single Metallic Socket",
+        "image": "https://www.tronic.co.ke/cdn/shop/products/TM5113.jpg?v=1667632223",
+        "category": "Sockets",
+        "price": 1100
+    },
+    {
+        "name": "13amps Twin Socket Slimline",
+        "image": "https://homesmart.org.uk/cdn/shop/products/White_Double_Wall_Socket_2_Gang_Square_Edge_Electric_Wall_1_large@2x.jpg?v=1532444108",
+        "category": "Sockets",
+        "price": 350
+    },
+    {
+        "name": "13amps Twin Socket Ivory Range Grey",
+        "image": "https://www.kenyagadgetshop.co.ke/wp-content/uploads/2022/01/13A-Twin-Universal-Socket-Grey-With-USB.jpg",
+        "category": "Sockets",
+        "price": 1250
+    },
+    {
+        "name": "13amps Wooden Twin Socket with USB and Type C Inlet",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1s7A5BuFZQ8dH26-7ZylMOV9YlK1kOeDjpU7PTK4R2ZWcai8mUEZzzR3KAsEg_N8F67E&usqp=CAU",
+        "category": "Sockets",
+        "price": 1500
+    },
+    {
+        "name": "13amps Wooden Universal Twin Socket",
+        "image": "https://www.tronic.co.tz/cdn/shop/products/TD5213-UN-GO.jpg?v=1669900788",
+        "category": "Sockets",
+        "price": 950
+    },
+    {
+        "name": "Floor Socket",
+        "image": "https://www.tronic.co.ke/cdn/shop/products/BF5213-02.jpg?v=1667388075",
+        "category": "Sockets",
+        "price": 3200
+    },
+    {
+        "name": "Clean Power Non-Standard Socket",
+        "image": "https://eyby.com/wp-content/uploads/2022/10/ESCHUMGU303300A.png",
+        "category": "Sockets",
+        "price": 2000
     }
 ]
