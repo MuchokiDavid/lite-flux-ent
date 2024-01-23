@@ -22,3 +22,15 @@
     justify-content: space-between;
     margin: 15px auto;
 }
+@media screen and (min-width:320px) and (max-width: 767px) 
+{
+    .item
+    {
+        flex-direction: column;
+    }
+    .item img
+    {
+        width: 100%;
+        margin: 30px;
+    }
+}
