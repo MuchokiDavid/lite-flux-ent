@@ -1,7 +1,7 @@
 section#services h1
 {
     text-align: center;
-    padding-top: 6%;
+    padding-top: 7%;
     margin-bottom: 25px;
     font-weight: 400;
     position: relative;
@@ -65,6 +65,10 @@ section#services div.services div.service p
     section#services
     {
         margin-top: 250px;
+    }
+    section#services h1
+    {
+        padding-top: 60%;
     }
     section#services div.services
     {
