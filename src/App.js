@@ -93,7 +93,7 @@ const App = () =>
                 [
                     {
                         path: "shop",
-                        element: <Shop Products={Products} />
+                        element: <Shop Products={Products} addToCart={addToCart}/>
                     },
                     {
                         path: ":name",

@@ -13,8 +13,8 @@ const ShopNavbar = ({cartCount}) =>
             if (path === "/cart")
             {
                 return(
-                    <Nav.Link>
-                        <Link key={title} to={path} title={title}>
+                    <Nav.Link key={title} >
+                        <Link to={path} title={title}>
                             <i className={icon}><span><sup>{cartCount}</sup></span></i>
                         </Link>
                     </Nav.Link>
@@ -23,8 +23,8 @@ const ShopNavbar = ({cartCount}) =>
             else
             {
                 return(
-                    <Nav.Link>
-                        <Link key={title} to={path} title={title} ><i className={icon}></i></Link>
+                    <Nav.Link key={title} >
+                        <Link to={path} title={title} ><i className={icon}></i></Link>
                     </Nav.Link>
                 )
             }

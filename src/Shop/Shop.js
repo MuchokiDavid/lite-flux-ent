@@ -4,7 +4,7 @@ import Filter from "./Filter";
 import Items from "./Items/Items";
 import { useEffect, useState } from "react";
 
-const Shop = ({Products, Categories}) => 
+const Shop = ({Products, Categories, addToCart}) => 
 {
     //State that keeps track of the items being displayed based on the category selected by the user
     const [displayedProducts, setDisplayedProducts]=useState(Products)
@@ -67,7 +67,7 @@ const Shop = ({Products, Categories}) =>
     return ( 
         <>
             <Filter handleSelectChange={handleSelectChange} categories={categories}/>
-            <Items products={displayedProducts}/>
+            <Items products={displayedProducts} addToCart={addToCart}/>
             <Outlet/>
         </>
      );
