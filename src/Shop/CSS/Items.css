@@ -15,7 +15,7 @@ a, a:visited
 {
     border: 1px solid blue;
     width: 300px;
-    height: 380px;
+    height: 390px;
     padding: 10px;
 }
 .card-container .item-card img
@@ -25,6 +25,7 @@ a, a:visited
 }
 .card-container .item-card h5
 {
+    height: 60px;
     font-size: 1.2em;
     padding-top: 10px;
 }
