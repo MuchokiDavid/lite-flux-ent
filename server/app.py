@@ -1,4 +1,4 @@
-from flask import Flask, make_response, jsonify, render_template
+from flask import Flask, make_response, redirect, render_template, request, session, url_for
 from flask_restful import Api, Resource
 from flask_migrate import Migrate
 from flask_admin import Admin
@@ -29,9 +29,32 @@ api.add_resource(Index, "/")
 
 class AdminLanding(Resource):
     def get(self):
-        return render_template("admin.html")
+        return render_template("index.html")
     
 api.add_resource(AdminLanding, "/admin")
+
+class AdminLogin(Resource):
+    def post(self):
+        email=request.form["email"]
+        password=request.form["password"]
+
+        admin=AdminModel.query.filter(AdminModel.email==email).first()
+
+        if not admin:
+            return render_template("admin.html", error_msg="No user exists with the given email")
+        
+        if admin.password != password:
+            return render_template("admin.html", error_msg="Invalid Password")
+
+        session['loggedin'] =True
+        session["email"]=email
+        return redirect(url_for("dashboard"))
+    
+api.add_resource(AdminLogin, "/admin/login")
+
+@app.route("/admin/dashboard")
+def dashboard():
+    return render_template("Dashboard.html")
 
 if __name__ == "__main__":
     app.run(port=5555, debug=True)

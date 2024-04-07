@@ -7,3 +7,4 @@ marshmallow
 flask-admin
 flask-cors
 flask-login
+redis
